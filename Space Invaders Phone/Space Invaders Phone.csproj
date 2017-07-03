@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CFF9C10-633C-4709-8C1E-F51823D0CA7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Space_Invaders_Phone</RootNamespace>
+    <AssemblyName>Space Invaders Phone</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Files\zig_____.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files\BarricadeSections\BottomLeft.bmp" />
+    <EmbeddedResource Include="Files\BarricadeSections\BottomRight.bmp" />
+    <EmbeddedResource Include="Files\BarricadeSections\Full.bmp" />
+    <EmbeddedResource Include="Files\BarricadeSections\TopLeft.bmp" />
+    <EmbeddedResource Include="Files\BarricadeSections\TopRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_0.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\10 points\Costume_0_10_Points.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\10 points\Costume_1_10_Points.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\20 points\Costume_0_20_Points.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\20 points\Costume_1_20_Points.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\40 points\Costume_0_40_Points.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\40 points\Costume_1_40_Points.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\BarricadeSections\TopRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\BarricadeSections\TopLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\BarricadeSections\BottomLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\BarricadeSections\BottomRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\UFO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\EnemyExploded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\10 points\Costume_0_10_Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\20 points\Costume_0_20_Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\40 points\Costume_0_40_Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\10 points\Costume_1_10_Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\20 points\Costume_1_20_Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Enemies\40 points\Costume_1_40_Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\PlayerExploded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Numbers\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\Barricades\BarricadeHits_01.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

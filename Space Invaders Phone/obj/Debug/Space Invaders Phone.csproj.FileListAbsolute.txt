@@ -1,0 +1,9 @@
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\bin\Debug\Space Invaders Phone.exe.config
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\obj\Debug\Space Invaders Phone.csprojResolveAssemblyReference.cache
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\obj\Debug\Space_Invaders_Phone.MainForm.resources
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\obj\Debug\Space_Invaders_Phone.Properties.Resources.resources
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\obj\Debug\Space Invaders Phone.csproj.GenerateResource.Cache
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\bin\Debug\Space Invaders Phone.exe
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\bin\Debug\Space Invaders Phone.pdb
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\obj\Debug\Space Invaders Phone.exe
+c:\users\simon\documents\visual studio 2015\Projects\Space Invaders Phone\Space Invaders Phone\obj\Debug\Space Invaders Phone.pdb
